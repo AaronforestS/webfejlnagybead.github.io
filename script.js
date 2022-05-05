@@ -5,7 +5,7 @@ function toggleTheme() {
         link.setAttribute('href', 'contrast.css');
         szoveg.textContent = 'Normál mód';
     }else{
-        link.setAttribute('href', 'style.css');
+        link.setAttribute('href', '');
         szoveg.textContent = 'Nagy kontrasztú mód';
     } 
 }
