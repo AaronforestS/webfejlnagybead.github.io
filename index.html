@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="grid.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link id="lnk" type="text/css" rel="stylesheet" href="">
+    <link type="text/css" rel="stylesheet" href="print.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Beefstro - Kezdőlap</title>
+</head>
+<body>
+
+    <div class="tartalomraugras">
+        <a href="#bevezeto">Ugrás a bevezetésre</a>
+        <a href="#videoszoveg">Ugrás a videó előtti szövegrészletre</a>
+        <a href="#video">Ugrás a videóra</a>
+    </div>
+
+    <nav class="topnav centercontent centertext">
+        <a href="index.html"><img alt="Beefstro logo" id="navkep" src="kepek/logo.jpg"></a>
+        <a href="index.html" class="active">Kezdőlap</a>
+        <a href="etlap.html">Étlap</a>
+        <a href="rolunk.html">Rólunk</a>
+        <a href="foglalas.html">Asztalfoglalás</a>
+        <a id="nagybetusmod" href="#" onclick="toggleTheme();">Nagy kontrasztú mód</a>
+    </nav>
+
+    <h1 id="kezdolap">Kezdőlap</h1>
+    <div class="container">
+        <header>
+            <div id="bevezeto" class="row centercontent centertext">
+                <div class="col-4 col-md-4 col-sm-12">
+                    <strong>Ínycsiklandó ételek</strong><br>
+                    Hazai, friss alapanyagokból készítjük ételeinket.
+                </div>
+
+                <div class="col-4 col-md-4 col-sm-12">
+                    <strong>Asztal-szervíz</strong><br>
+                    Minden rendelést valamint kártyás és készpénzes fizetést az asztalnál intézünk.
+                </div>
+
+                <div class="col-4 col-md-4 col-sm-12">
+                    <strong>Akár csoportoknak is</strong><br>
+                    Gyere akár egyedül, vagy akár másokkal, éttermünk tárt karokkal vár.
+                </div>
+            </div>
+        </header>
+        <div class="row centercontent centertext">
+            <div class="col-6 col-md-6 col-sm-12 kivagas">
+                <a href="kepek/korkep1.jpg" target="_blank"><img alt="Egy marharostélyos vágólapon, sóval megszórva, egy szár korianderrel mellette" class="korkep" src="kepek/korkep1.jpg"></a>
+            </div>
+            <div class="col-6 col-md-6 col-sm-12 kivagas">
+                <a href="kepek/korkep2.jpg" target="_blank"><img alt="Közepesre sült marhaszeletek egy vágólapon mellette egy tálban fűszerekkel" class="korkep" src="kepek/korkep2.jpg"></a>
+            </div>
+        </div>
+        <div id="videoszoveg" class="row centercontent centertext">
+			<div class="col-8 col-md-10 col-sm-12">
+				<a href="https://www.youtube.com/watch?v=3iEriMpoFW4" target="_blank">Az alábbi (idegen nyelvű : angol), videón megtekintheti az egyik specialitásunk</a>, a ,<a href="https://www.mindmegette.hu/wellington-belszin-eredeti-angol-recept.recept/" target="_blank">wellington bélszín elkészítésének fő fázisait</a>, 1 percben összesűrítve.
+				<aside>
+					<b>Hozzávalók:</b><br>
+					80 dkg bélszín, 1 tk őrölt fekete bors, 1 tk mustár, só, olaj, 50 dkg fagyasztott leveles vajastészta, liszt, 1 db tojás, 40 dkg csiperkegomba, 1 fej vöröshagyma, 1 tk só, 0.5 tk őrölt fekete bors, 2 ek zsemlemorzsa, 2 db tojás, 0.5 csokor petrezselyem
+				</aside>
+			</div>
+		</div>
+        <div class="row centercontent centertext">
+            <div class="col-8 col-md-10 col-sm-12">
+                <video id="video" controls poster="kepek/poster.PNG">
+                    <source src="kepek/wellingtonvideo.mp4" type="video/mp4">
+                    A böngésző nem támogatja a videót!
+                </video>
+            </div>
+        </div>
+        <div class="row centertext centercontent">
+            <div class="col-8 col-md-10 col-sm-12">
+                <a href="leirasok.xhtml" target="_blank">A videó fordítását valamint tartalmának leírását ide kattintva megtekintheti!</a>
+            </div>
+        </div>
+    </div>
+
+        <footer class="row centercontent centertext">
+            <div class="col-4 col-md-4 col-sm-12">Telefonszám: +42 04 738 1472</div>
+            <div class="col-4 col-md-4 col-sm-12">E-mail cím: beefstro@bead.hu</div>
+            <div class="col-4 col-md-4 col-sm-12">Elhelyezkedés: 5725 Kötegyán, közép utca 175</div>
+        </footer>
+
+</body>
+</html>

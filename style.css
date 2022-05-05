@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navkep{
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #222;
+  }
+  .topnav a:not(.active){
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 3em;
+  }
+  .topnav a:not(:first-child):hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active{
+    background-color: #ddd;
+    color: black;
+    float: left;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 3em;
+  }
+
+.etlapkep{
+    border-radius: 30%;
+    width: 30%;
+    height: auto;
+}
+th,td{
+    border-bottom: 1px solid black;
+}
+figcaption{
+    font-style: italic;
+}
+table{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+    padding: 1%;
+    border: 1px solid black;
+    width: 80%;
+}
+footer, #footer{
+    color: #f2f2f2;
+    background-color: #222;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 1.3em;
+}
+caption{
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 1.5em;
+}
+h2{
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    height: 1em;
+}
+h1{
+    text-shadow: 0px 0px 20px #FFFFFF;
+    display: flex;
+    width: 100%;
+    font-size: 8em;
+    justify-content: center;
+    align-items: center;
+    background-image: url('kepek/kezdolap.png');
+    height: 2em;
+    margin:auto;
+}
+table thead{
+    font-size: 2em;
+}
+table tbody{
+    font-size: 1.5em;
+}
+.centercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rolunkimg {
+    width: 60%;
+    height: auto;
+  }
+.container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+form{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+}
+input{
+    font-size: 0.8em;
+}
+.centertext{
+    text-align: center;
+}
+
+.korkep{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+
+    border-radius: 50%;
+    width: 45%;
+    height: auto;
+}
+.kivagas{
+    overflow: hidden;
+}
+video{
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.leiras{
+    text-align: justify;
+}
+
+
+textarea{
+    width: 50em;
+    height: 25em;
+}
+input[type="checkbox"],input[type="radio"],select{
+    margin: 2%;
+    transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    -o-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+}
+.tartalomraugras{
+    position: absolute;
+    left: -9999px;
+}
+@media only screen and (min-width: 1280px){
+    video{
+        width: 50%;
+        height: auto;
+    }
+    input[type="text"],input[type="email"],input[type="date"],input[type="time"]{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 1280px){
+    h1{
+        width: 100%;
+        font-size: 6em;
+        height: 2em;
+    }
+}
+@media only screen and (max-width: 1010px){
+    #navkep{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    textarea{
+        width: 10em;
+        height: 10em;
+    }
+    h2{
+        width: 100%;
+        font-size: 1.5em;
+        height: 2em;
+    }
+    h1{
+        width: 100%;
+        font-size: 4em;
+        height: 2em;
+    }
+}
+@media screen and (max-width: 790px) {
+    .topnav .resLinks{
+        display: block;
+    }
+    .topnav .regLinks{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .etlapkepcella { display: none; }
+    table, thead, tbody, td, tr, th{
+        display: block;
+    }
+    th,td{
+        border-bottom: none;
+    }
+    th:last-child, td:last-child{
+        border-bottom: 1px solid black;
+    }
+}
+@media screen and (max-width: 320px) {
+    .etlapkepcella { display: none; }
+    table, thead, tbody, td, tr, th{
+        font-size: 0.8em;
+    }
+
+    input[type="button"]{
+        width: 75%;
+    }
+    h1{
+        width: 100%;
+        font-size: 3em;
+        height: 2em;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .topnav{
+        position: relative;
+        float: none;
+        font-size: 0.7em;
+        text-align: center;
+        display: block;
+    }
+    .topnav a{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 420px) {
+    input[type="text"],input[type="email"],input[type="date"],input[type="time"]{
+        width: 50%;
+    }
+    h2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}

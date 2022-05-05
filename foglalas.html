@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="grid.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link id="lnk" type="text/css" rel="stylesheet" href="">
+    <link type="text/css" rel="stylesheet" href="print.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Beefstro - Asztalfoglalás</title>
+</head>
+<body>
+
+    <div class="tartalomraugras">
+        <a href="#urlap">Ugrás az űrlapra</a>
+    </div>
+
+    <nav class="topnav centercontent centertext">
+        <a href="index.html"><img alt="Beefstro logo" id="navkep" src="kepek/logo.jpg"></a>
+        <a href="index.html">Kezdőlap</a>
+        <a href="etlap.html">Étlap</a>
+        <a href="rolunk.html">Rólunk</a>
+        <a href="foglalas.html" class="active">Asztalfoglalás</a>
+        <a id="nagybetusmod" href="#" onclick="toggleTheme();">Nagy kontrasztú mód</a>
+    </nav>
+
+<h1>Asztalfoglalás</h1>
+
+<div class="container centercontent">
+<form id="urlap" action="mailto:ogoqjl@inf.elte.hu" method="post" enctype="text/plain">
+    <div class="row">
+        <div class="col-6 col-md-6 col-sm-12">
+            <label for="foglalasidodatum">Dátum:</label><br>
+            <input required type="date" id="foglalasidodatum" name="foglalasidodatum"><!--min today javascript-->
+        </div>
+        <div class="col-6 col-md-6 col-sm-12">
+            <label for="foglalasidopont">Időpont:</label><br>
+            <input required type="time" id="foglalasidopont" name="foglalasidopont"><!--min now javascript-->
+        </div>
+    </div>
+
+    Létszám:
+    <div class="row">
+        <div class="col-6 col-md-6 col-sm-12">
+                <input checked type="radio" id="egyedul" name="letszam" value="egyedul"><label for="egyedul">Egyedül érkezem</label><br>
+                <input type="radio" id="tobben" name="letszam" value="tobben"><label for="tobben">Többen jövünk</label>
+        </div>
+        <div class="col-6 col-md-6 col-sm-12">
+                <select name="hanyan" id="hanyan">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+                </select> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 col-md-4 col-sm-12">
+            <label for="nev">Név:</label><br><input size="35" maxlength="35" required type="text" name="nev" id="nev">
+        </div>
+        <div class="col-4 col-md-4 col-sm-12">
+            <label for="email">E-mail:</label><br><input size="35" maxlength="100" required type="email" name="email" id="email">
+        </div>
+        <div class="col-4 col-md-4 col-sm-12">
+            <label for="telefon">Telefonszám:</label><br><input size="13" maxlength="15" required type="text" name="telefon" id="telefon">
+        </div>
+    </div>
+    
+
+    Hol szeretne helyet foglalni?
+    <div class="row">
+            <div class="col-6 col-md-6 col-sm-12">
+                <input checked type="radio" id="belter" name="hol" value="belter"><label for="belter">Beltéren</label>
+            </div>
+            <div class="col-6 col-md-6 col-sm-12">
+                <input type="radio" id="kulter" name="hol" value="kulter"><label for="kulter">Kültéren</label>
+            </div>
+
+    </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-sm-12">
+                <label for="megjegyzes">Megjegyzés</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-sm-12">
+                <textarea id="megjegyzes"></textarea>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-6 col-md-6 col-sm-12">
+            <input id="hirlevel" name="hirlevel" type="checkbox"><label for="hirlevel">Fel szeretne iratkozni a hírlevelünkre, az imént megadott e-mail címmel?</label><br>
+        </div>
+        <div class="col-6 col-md-6 col-sm-12">
+            <input required id="adatvedelem" name="adatvedelem" type="checkbox"><label for="adatvedelem"><strong>Tudomásul veszem</strong>, hogy az itt megadott adataimat a Beefstro oldal üzemeltetője kizárólag kapcsolatfelvétel céljából fogja felhasználni. Elfogadom a fent említett foglalási feltételeket!</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-md-6 col-sm-12">
+            <input type="submit" value="Küldés">
+        </div>
+        <div class="col-6 col-md-6 col-sm-12">
+            <input type="reset" value="Alaphelyzet">
+        </div>
+    </div>
+</form>
+</div>
+
+        <footer class="row centercontent centertext">
+            <div class="col-4 col-md-4 col-sm-12">Telefonszám: +42 04 738 1472</div>
+            <div class="col-4 col-md-4 col-sm-12">E-mail cím: beefstro@bead.hu</div>
+            <div class="col-4 col-md-4 col-sm-12">Elhelyezkedés: 5725 Kötegyán, közép utca 175</div>
+        </footer> 
+
+</body>
+</html>

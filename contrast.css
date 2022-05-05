@@ -1,0 +1,27 @@
+@import url('style.css');
+*:not(textarea){
+    font-size: 110%;
+}
+.centertext, .centercontent{
+    background-color: black;
+    color: yellow;
+}
+a:not(.active){
+    color: white;
+}
+a:visited:not(.active){
+    color: #CCC;
+}
+form{
+    width: 75%;
+}
+input[type="text"],input[type="email"],input[type="date"],input[type="time"]{
+    width: 50%;
+}
+@media screen and (max-width: 420px) {
+    h2{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+}
+

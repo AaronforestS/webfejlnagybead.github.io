@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="grid.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link id="lnk" type="text/css" rel="stylesheet" href="">
+  <link type="text/css" rel="stylesheet" href="print.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>Beefstro - Étlap</title>
+</head>
+<body>
+
+
+  <div class="tartalomraugras">
+    <a href="#etlap">Ugrás az étlapra</a>
+  </div>
+
+    <nav class="topnav centercontent centertext">
+      <a href="index.html"><img alt="Beefstro logo" id="navkep" src="kepek/logo.jpg"></a>
+      <a href="index.html">Kezdőlap</a>
+      <a href="etlap.html" class="active">Étlap</a>
+      <a href="rolunk.html">Rólunk</a>
+      <a href="foglalas.html">Asztalfoglalás</a>
+      <a id="nagybetusmod" href="#" onclick="toggleTheme();">Nagy kontrasztú mód</a>
+    </nav>
+
+    <h1>Étlap</h1>
+  <div class="centercontent centertext nagybetuk"> 
+      <table id="etlap">
+        <caption>Aktuális ajánlatok
+            <details>
+              <summary>Fizetési információk</summary>
+              <p>A táblázatban szereplő összegek forintban értendőek, <a href="https://hu.wikipedia.org/wiki/%C3%81ltal%C3%A1nos_forgalmi_ad%C3%B3" target="_blank">áraink az áfát tartalmazzák!</a></p>
+            </details>
+        </caption>
+          <thead>
+            <tr>
+              <th>Termékmegnevezés<br></th>
+              <th>Ár</th>
+              <th class="etlapkepcella">Kép a termékről</th>
+              <th>Allergének</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wellington Bélszín</td>
+              <td>7000Ft</td>
+              <td class="etlapkepcella"><img alt="Welington bélszín tányéron, hasábburgonya és zöldbab körettel" class="etlapkep" src="kepek/wellington.jpg"></td>
+              <td>Glutén, Tojás</td>
+            </tr>
+            <tr>
+              <td>Vörösboros Marhapörkölt</td>
+              <td>4500Ft  </td>
+              <td class="etlapkepcella"><img alt="Marhapörkölt apró galuskával tányéron" class="etlapkep" src="kepek/marhaporkolt.jpg"></td>
+              <td>Glutén, Tojás</td>
+            </tr>
+            <tr>
+              <td>Svéd Húsgolyó</td>
+              <td>3000Ft</td>
+              <td class="etlapkepcella"><img alt="Húsgolyók serpenyőben, snidlinges mártással" class="etlapkep" src="kepek/sved_husgolyo.jpg"></td>
+              <td>Glutén, Tojás, Tej, Diófélék, Mustár</td>
+            </tr>
+            <tr>
+              <td>Marhaszelet Barnamártással</td>
+              <td>2500Ft</td>
+              <td class="etlapkepcella"><img alt="Marhaszeletek hasábburgonyával, barnamártással meglocsolva, tányéron" class="etlapkep" src="kepek/barnamartas.jpg"></td>
+              <td>Glutén, Tej</td>
+            </tr>
+            <tr>
+              <td>Gombás Marhahúsos Ragu</td>
+              <td>3500Ft</td>
+              <td class="etlapkepcella"><img alt="Marhát, répát, és burgonyát tartalmazó ragu egy tányéron" class="etlapkep" src="kepek/ragu.jpg"></td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Marha-burger Hagymakarikával</td>
+              <td>3000Ft</td>
+              <td class="etlapkepcella"><img alt="3 hamburger egymás mellett, a 2 szélső fekete, a középső pedig narancssárga színű buciban, előttük hagymakarikákkal" class="etlapkep" src="kepek/marhaburger.jpg"></td>
+              <td>Glutén, Tej</td>
+            </tr>
+          </tbody>
+          </table>
+  </div>
+      <footer class="row centercontent centertext">
+          <div class="col-4 col-md-4 col-sm-12">Telefonszám: +42 04 738 1472</div>
+          <div class="col-4 col-md-4 col-sm-12">E-mail cím: beefstro@bead.hu</div>
+          <div class="col-4 col-md-4 col-sm-12">Elhelyezkedés: 5725 Kötegyán, közép utca 175</div>
+      </footer>
+
+</body>
+</html>
